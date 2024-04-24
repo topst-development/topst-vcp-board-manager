@@ -14,17 +14,14 @@
           "architecture": "VCP",
           "version": "1.0.0",
           "category": "Contributed",
-          "url": "https://github.com/stm32duino/Arduino_Core_STM32/releases/download/2.0.0/STM32-2.0.0.tar.bz2",
-          "archiveFileName": "STM32-2.0.0.tar.bz2",
-          "checksum": "SHA-256:31e7a98afdc595335acbd111b39563350eb63bd0bcd005aebbe6fe1f8bad26fe",
-          "size": "38496810",
+          "url": "https://github.com/topst-vcp/topst-vcp-arduino-core/releases/download/v0.1/release-files.tar.bz2",
+          "archiveFileName": "release-files.tar.bz2",
+          "checksum": "SHA-256:4acc26dcf86734ed4ef6137f521f7ac9b6a39f4a84ce7cd7c3f93976528456a5",
+          "size": "240741",
           "boards": [
             {
               "name": "TOPST VCP"
             },
-            {
-              "name": "TOPST VCP(Pre-released boards)"
-            }
           ],
           "toolsDependencies": [
             {
