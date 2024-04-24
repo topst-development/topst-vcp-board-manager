@@ -21,7 +21,7 @@
           "boards": [
             {
               "name": "TOPST VCP"
-            },
+            }
           ],
           "toolsDependencies": [
             {
