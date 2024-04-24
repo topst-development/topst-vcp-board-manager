@@ -1,7 +1,7 @@
 {
   "packages": [
     {
-      "name": "TOPST",
+      "name": "topst",
       "websiteURL": "https://github.com/topst-vcp",
       "maintainer": "HUCONN",
       "email": "huconn@huconn.com",
@@ -11,7 +11,7 @@
       "platforms": [
         {
           "name": "TOPST VCP boards",
-          "architecture": "VCP",
+          "architecture": "vcp",
           "version": "0.2.0",
           "category": "Contributed",
           "url": "https://github.com/topst-vcp/topst-vcp-arduino-core/releases/download/v0.2/release-files.tar.bz2",
