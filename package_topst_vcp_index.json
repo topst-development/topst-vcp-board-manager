@@ -25,7 +25,7 @@
           ],
           "toolsDependencies": [
             {
-              "packager": "TOPST",
+              "packager": "topst",
               "name": "xpack-arm-none-eabi-gcc",
               "version": "10.2.1-1.1"
             }
