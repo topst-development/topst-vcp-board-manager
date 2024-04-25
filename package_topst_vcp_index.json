@@ -28,7 +28,11 @@
               "packager": "topst",
               "name": "xpack-arm-none-eabi-gcc",
               "version": "10.2.1-1.1"
-            }
+            },
+            {
+              "packager": "topst",
+              "name": "vcp-tools",
+              "version": "0.2"}
           ]
         }
       ],
@@ -78,6 +82,26 @@
               "archiveFileName": "xpack-arm-none-eabi-gcc-10.2.1-1.1-linux-ia32.tar.gz",
               "checksum": "SHA-256:8adaca8af367a54d1acd2b274cfdc18384b87fbe0ba613322ea3ead20677a132",
               "size": "192497639"
+            }
+          ]
+        },
+        {
+          "name": "vcp-tools",
+          "version": "0.2",
+          "systems": [
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/topst-vcp/vcp-tools/releases/download/v0.2/vcp-tools.tar.bz2",
+              "archiveFileName": "vcp-tools.tar.bz2",
+              "checksum": "SHA-256:3cee6197e624b1bcffbd0e1129f01d5339c0ba77825b783511cfe99891363882",
+              "size": "7637345"
+            },
+            {
+              "host": "x86_64-mingw32",
+              "url": "https://github.com/topst-vcp/vcp-tools/releases/download/v0.2/vcp-tools.zip",
+              "archiveFileName": "vcp-tools.zip",
+              "checksum": "SHA-256:d7078fdab51d2a9928b6105d7d0c3991c67b00209920a7bc68c0af795188815c",
+              "size": "7595461"
             }
           ]
         }
