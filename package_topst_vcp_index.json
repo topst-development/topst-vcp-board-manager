@@ -12,12 +12,12 @@
         {
           "name": "TOPST VCP boards",
           "architecture": "vcp",
-          "version": "0.6.0",
+          "version": "0.7.0",
           "category": "Contributed",
-          "url": "https://github.com/topst-vcp/topst-vcp-arduino-core/releases/download/v0.6/release-files.tar.bz2",
+          "url": "https://github.com/topst-vcp/topst-vcp-arduino-core/releases/download/v0.7/release-files.tar.bz2",
           "archiveFileName": "release-files.tar.bz2",
-          "checksum": "SHA-256:f28539be499f6551785dddd775fe6f219e9aeed41c8c1d1b67a2f6473ec99b1c",
-          "size": "274087",
+          "checksum": "SHA-256:71ef8000ab8cda80f677f7a96427e00f885620600a4fc7efd6332c317f1b6fb8",
+          "size": "273993",
           "boards": [
             {
               "name": "TOPST VCP"
@@ -32,7 +32,7 @@
             {
               "packager": "topst",
               "name": "vcp-tools",
-              "version": "0.2"}
+              "version": "0.3"}
           ]
         }
       ],
@@ -87,7 +87,7 @@
         },
         {
           "name": "vcp-tools",
-          "version": "0.2",
+          "version": "0.3",
           "systems": [
             {
               "host": "x86_64-pc-linux-gnu",
@@ -98,10 +98,10 @@
             },
             {
               "host": "x86_64-mingw32",
-              "url": "https://github.com/topst-vcp/vcp-tools/releases/download/v0.2/vcp-tools.zip",
+              "url": "https://github.com/topst-vcp/vcp-tools/releases/download/v0.3/vcp-tools.zip",
               "archiveFileName": "vcp-tools.zip",
-              "checksum": "SHA-256:d7078fdab51d2a9928b6105d7d0c3991c67b00209920a7bc68c0af795188815c",
-              "size": "7595461"
+              "checksum": "SHA-256:14fb209d61bc39d6c40bc919bc260ed4b1ec36a3e89eb0b5a4d4379ec0a27bb6",
+              "size": "7867031"
             }
           ]
         }
