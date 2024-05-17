@@ -100,8 +100,8 @@
               "host": "x86_64-mingw32",
               "url": "https://github.com/topst-vcp/vcp-tools/releases/download/v0.3/vcp-tools.zip",
               "archiveFileName": "vcp-tools.zip",
-              "checksum": "SHA-256:14fb209d61bc39d6c40bc919bc260ed4b1ec36a3e89eb0b5a4d4379ec0a27bb6",
-              "size": "7867031"
+              "checksum": "SHA-256:7adaf43adff947dd7ea4e03bd07240c15fa4b53e0bac2f8a3816fc09f8410930",
+              "size": "7832841"
             }
           ]
         }
