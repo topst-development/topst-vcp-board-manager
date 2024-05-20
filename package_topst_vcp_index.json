@@ -32,7 +32,7 @@
             {
               "packager": "topst",
               "name": "vcp-tools",
-              "version": "0.3"}
+              "version": "0.4"}
           ]
         }
       ],
@@ -87,21 +87,21 @@
         },
         {
           "name": "vcp-tools",
-          "version": "0.3",
+          "version": "0.4",
           "systems": [
             {
               "host": "x86_64-pc-linux-gnu",
-              "url": "https://github.com/topst-vcp/vcp-tools/releases/download/v0.2/vcp-tools.tar.bz2",
+              "url": "https://github.com/topst-vcp/vcp-tools/releases/download/v0.4/vcp-tools.tar.bz2",
               "archiveFileName": "vcp-tools.tar.bz2",
-              "checksum": "SHA-256:3cee6197e624b1bcffbd0e1129f01d5339c0ba77825b783511cfe99891363882",
-              "size": "7637345"
+              "checksum": "SHA-256:4e4c5190260bebf8a09038605a90c8eb2890467cce085effe716fcffe3927a76",
+              "size": "7882177"
             },
             {
               "host": "x86_64-mingw32",
-              "url": "https://github.com/topst-vcp/vcp-tools/releases/download/v0.3/vcp-tools.zip",
+              "url": "https://github.com/topst-vcp/vcp-tools/releases/download/v0.4/vcp-tools.zip",
               "archiveFileName": "vcp-tools.zip",
-              "checksum": "SHA-256:7adaf43adff947dd7ea4e03bd07240c15fa4b53e0bac2f8a3816fc09f8410930",
-              "size": "7832841"
+              "checksum": "SHA-256:e5e6f365d62c232e67eda037f87e9c75d8786eb81210fd8cb9c53ca932d0181e",
+              "size": "7842506"
             }
           ]
         }
