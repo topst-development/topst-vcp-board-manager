@@ -16,8 +16,8 @@
           "category": "Contributed",
           "url": "https://github.com/topst-vcp/topst-vcp-arduino-core/releases/download/v0.8/release-files.tar.bz2",
           "archiveFileName": "release-files.tar.bz2",
-          "checksum": "SHA-256:7f54160ec2b7868dd451b70a18cc98d4c859a5e87ef44cccb2b07135f248c04a",
-          "size": "2989630",
+          "checksum": "SHA-256:d0ef28da0fd3ccb2e2d64278241519139f955a6248eedf13080305cb64f45851",
+          "size": "2989758",
           "boards": [
             {
               "name": "TOPST VCP"
