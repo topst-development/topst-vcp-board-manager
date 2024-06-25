@@ -12,41 +12,6 @@
         {
           "name": "TOPST VCP boards",
           "architecture": "vcp",
-          "version": "0.8.3",
-          "category": "Contributed",
-          "url": "https://github.com/topst-vcp/topst-vcp-arduino-core/releases/download/v0.8.3/release-files.tar.bz2",
-          "archiveFileName": "release-files.tar.bz2",
-          "checksum": "SHA-256:95b5981b08be614f7836deeaac51201b036a59efdc0bec6c540ebf8ff8a574c2",
-          "size": "7447321",
-          "boards": [
-            {
-              "name": "TOPST VCP"
-            }
-          ],
-          "toolsDependencies": [
-            {
-              "packager": "topst",
-              "name": "xpack-arm-none-eabi-gcc",
-              "version": "10.2.1-1.1"
-            },
-            {
-              "packager": "topst",
-              "name": "vcp-tools",
-              "version": "0.4"}
-          ]
-        },
-    {
-      "name": "topst",
-      "websiteURL": "https://github.com/topst-vcp",
-      "maintainer": "TOPST.ai",
-      "email": "topst@topst.ai",
-      "help": {
-        "online": "http://topst.ai/"
-      },
-      "platforms": [
-        {
-          "name": "TOPST VCP boards",
-          "architecture": "vcp",
           "version": "0.8.2",
           "category": "Contributed",
           "url": "https://github.com/topst-vcp/topst-vcp-arduino-core/releases/download/v0.8.2/release-files.tar.bz2",
