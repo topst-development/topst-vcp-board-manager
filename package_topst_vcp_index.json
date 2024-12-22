@@ -12,12 +12,12 @@
         {
           "name": "TOPST VCP boards",
           "architecture": "vcp",
-          "version": "0.8.5",
+          "version": "0.9.0",
           "category": "Contributed",
-          "url": "https://github.com/topst-vcp/topst-vcp-arduino-core/releases/download/v0.8.5/release-files.tar.bz2",
+          "url": "https://github.com/topst-vcp/topst-vcp-arduino-core/releases/download/v0.9/release-files.tar.bz2",
           "archiveFileName": "release-files.tar.bz2",
-          "checksum": "SHA-256:793b9cd39b8a2fb4e5527208fe95458d6c8aeb05687f453f4cef0fed96173567",
-          "size": "7446981",
+          "checksum": "SHA-256:bdef976594c3b5d371d01a1644fa02e8cb4220310d4b9ad67f754cbd88cd3bd1",
+          "size": "7457552",
           "boards": [
             {
               "name": "TOPST VCP"
