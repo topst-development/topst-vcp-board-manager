@@ -1,0 +1,63 @@
+name: Update Package Index
+
+on:
+  workflow_dispatch:
+    inputs:
+      platform_version:
+        description: 'Platform Version'
+        required: true
+        
+jobs:
+  update-package-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup environment
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+
+      - name: Get latest release version
+        id: get_version
+        run: |
+          LATEST_VERSION=$(curl -s https://api.github.com/repos/topst-vcp/topst-vcp-arduino-core/releases/latest | jq -r .tag_name | sed 's/^v//')
+          echo "version=$LATEST_VERSION" >> $GITHUB_OUTPUT
+
+      - name: Download release files
+        run: |
+          curl -L -o release-files.tar.bz2 \
+          "https://github.com/topst-vcp/topst-vcp-arduino-core/releases/download/v${{ steps.get_version.outputs.version }}/release-files.tar.bz2"
+
+      - name: Calculate metadata
+        id: calc-metadata
+        run: |
+          # Arduino Core 메타데이터 계산
+          echo "PLATFORM_CHECKSUM=$(sha256sum release-files.tar.bz2 | awk '{print $1}')" >> $GITHUB_ENV
+          echo "PLATFORM_SIZE=$(stat -c%s release-files.tar.bz2)" >> $GITHUB_ENV
+
+      - name: Generate package index
+        run: |
+          # 템플릿 파일에서 변수 치환
+          PLATFORM_URL="https://github.com/topst-vcp/topst-vcp-arduino-core/releases/download/v${{ steps.get_version.outputs.version }}/release-files.tar.bz2"
+          
+          cp package_topst_vcp_index.json.template package_topst_vcp_index.json
+          
+          # platform 관련 변수만 치환
+          sed -i "s|\${PLATFORM_VERSION}|${{ steps.get_version.outputs.version }}|g" package_topst_vcp_index.json
+          sed -i "s|\${PLATFORM_URL}|${PLATFORM_URL}|g" package_topst_vcp_index.json
+          sed -i "s|\${PLATFORM_CHECKSUM}|${PLATFORM_CHECKSUM}|g" package_topst_vcp_index.json
+          sed -i "s|\${PLATFORM_SIZE}|${PLATFORM_SIZE}|g" package_topst_vcp_index.json
+
+      - name: Validate JSON
+        run: |
+          jq empty package_topst_vcp_index.json
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "Daekeun Kang"
+          git config --global user.email "daekun.kang@huconn.com"
+          git add package_topst_vcp_index.json
+          git commit -m "Update package index to platform v${{ steps.get_version.outputs.version }}"
+          git push
