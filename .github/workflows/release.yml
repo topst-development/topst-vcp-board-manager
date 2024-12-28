@@ -1,11 +1,6 @@
 name: Update Package Index
 
-on:
-  workflow_dispatch:
-    inputs:
-      platform_version:
-        description: 'Platform Version'
-        required: true
+on: workflow_dispatch
         
 jobs:
   update-package-index:
