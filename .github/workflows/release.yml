@@ -56,3 +56,5 @@ jobs:
           git add package_topst_vcp_index.json
           git commit -m "Update package index to platform v${{ steps.get_version.outputs.version }}"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
