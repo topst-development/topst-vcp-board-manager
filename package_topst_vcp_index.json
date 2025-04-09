@@ -16,7 +16,7 @@
           "category": "Contributed",
           "url": "https://github.com/topst-development/topst-vcp-board-manager/releases/download/v0.9.4-1/release-files.tar.bz2",
           "archiveFileName": "release-files.tar.bz2",
-          "checksum": "SHA-256:a5d3d831f1c78e274e458eede99c43294dbe9dd5d075c5f939a833b709b1a5f9",
+          "checksum": "SHA-256:2312a90d3bb22b299c09225f2faa89eebcf34a0138f894e8ee35daa829776d0f",
           "size": "7458679",
           "boards": [
             {
